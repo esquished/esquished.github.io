@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SQUISHEDABOUTSQUISHED</title>
+<!--1t$@B@ND-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="styles/styled.css">
+<link rel="stylesheet" type="text/css" href="styles/anim.css">
+<link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,700" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+var init = setInterval(function(){transformAll()},1000);
+
+function transformAll(){
+	var nick = $("#nick");
+	var pat = $("#pat");
+	var eric = $("#eric");
+
+    nick.css({ transform:"translate(" + Math.floor(randomX()) + "px, "+ Math.floor(randomY()) + "px) rotate(" + 180 * Math.random() + "deg)" });
+    eric.css({ transform:"translate(" + Math.floor(randomX()) + "px, "+ Math.floor(randomY()) + "px) rotate(" + 180 * Math.random() + "deg)" });
+    pat.css({ transform:"translate(" + Math.floor(randomX()) + "px, "+ Math.floor(randomY()) + "px) rotate(" + 180 * Math.random() + "deg)" });
+};
+
+function randomX() {
+	var w = $(window).width() - 100;
+    return Math.random()*w;
+}
+
+function randomY() {
+  	var h = $(window).height() - 100;
+    return Math.random()*h;
+}
+</script>
+
+
+</head>
+
+
+<body>
+
+	<nav class="side">
+	    <div class="side__inner">
+	        <div class="top"><a href="http://squished.space">SQUISHED</a></div>
+	        <div class="bottom">
+	            <a href="muzak">MUSIC</a>
+	            <a href="gear">GEAR</a>
+	            <a href="about">ABOUT</a>
+	        </div>
+	    </div>
+	</nav>
+
+	<div class="noflex">
+		<div id="nick" class="names"><h1 class="fade">NICK</h1></div>
+		<div id="pat" class="names"><h1 class="fade">PAT</h1></div>
+		<div id="eric" class="names"><h1 class="fade">ERIC</h1></div>
+		<div class="row">
+			<div class="col-4 col-md-8 col-sm-12 pt-0">
+				<h1>ABOUT</h1>
+				<p>Squished is a band without a plan&mdash;No plan whatsover&mdash;We come together, play, and then leave. We might record an artifact of these playings, other times we might not. If we like what it sounds like, it normally ends up on <a href="http://squished.bandcamp.com">Bandcamp</a>.</p> 
+				<p><b>Someday</b>, Squished might actually have a set of songs we can play for people other than ourselves. </p>
+			</div>
+		</div>
+	</div>
+		
+</body>
+</html>
