@@ -8,7 +8,7 @@
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
 }
-
+/*
 .ca:nth-of-type(1) {
   -webkit-animation-delay: 0ms;
           animation-delay: 0ms;
@@ -41,7 +41,7 @@
   -webkit-animation-delay: 560ms;
           animation-delay: 560ms;
 }
-
+*/
 @keyframes anim {
   0% {
     -webkit-transform: rotate(0deg);

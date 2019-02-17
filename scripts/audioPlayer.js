@@ -6,10 +6,10 @@ var ap1 = new APlayer({
     mutex: true,
     theme: '#ff2828',
     music: {
-            title: 'WHAT',
+            title: 'STE-046 (hide)',
             author: 'SQUISHED',
-            url: 'tunes/tease_01.mp3',
-            pic: 'img/covers/randCover.jpg'
+            url: 'tunes/STE-046 (hide).mp3',
+            pic: 'img/covers/C1.png'
         }
     
 });
